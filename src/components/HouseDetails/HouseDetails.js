@@ -1,9 +1,10 @@
 import { useLocation, useHistory } from "react-router-dom";
 
+
 function HouseDetails() {
   const location = useLocation();
   const { region, name, coatOfArms } = location.state.house;
-  console.log(location.state.house, "location.state.house");
+
 
   let history = useHistory();
 

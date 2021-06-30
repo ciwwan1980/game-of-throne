@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import './index.css'
 function HouseList() {
   const [houseList, setHouseList] = useState([]);
 
@@ -20,8 +20,11 @@ function HouseList() {
   }, []);
 
   return (
-    <div>
-      <ul>
+    <div className="houseContainer">
+
+    <h1>Houses</h1>
+     <div className="houseWrapper">
+    
         {houseList.map((house, index) => (
           <div className="house" key={house.id}>
               
@@ -35,7 +38,7 @@ function HouseList() {
               </Link>
             </div>
         ))}
-      </ul>
+       </div>
     </div>
   );
 }
