@@ -13,7 +13,7 @@ function HouseList() {
         data.forEach((item) => {
           let id = item.url.split("/").pop();
           array.push({ id, ...item });
-          console.log(array, "array");
+        //   console.log(array, "array");
         });
         setHouseList(array);
       });
@@ -23,12 +23,17 @@ function HouseList() {
     <div>
       <ul>
         {houseList.map((house, index) => (
-          <li key={index}>
-            <h3>{house.name}</h3>
-            <Link to={`/house/${house.name}`}>
-              <button key={house.name}>more details</button>
-            </Link>
-          </li>
+          <div className="house" key={house.id}>
+              
+              <Link
+                to={{
+                  pathname: `/house/${house.id}`,
+                  state: { house },
+                }}
+              >
+                <h2>{house.name}</h2>
+              </Link>
+            </div>
         ))}
       </ul>
     </div>

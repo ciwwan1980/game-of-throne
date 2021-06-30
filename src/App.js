@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HouseList from "./components/HouseList";
 import HouseDetails from "./components/HouseDetails";
 
+
 function App() {
   return (
     <Router>
@@ -14,7 +15,7 @@ function App() {
             <HouseList />
           </Route>
 
-          <Route path="/house/:name">
+          <Route path="/house/:id">
             <HouseDetails />
           </Route>
         </Switch>
