@@ -1,4 +1,6 @@
 import "./App.css";
+import HouseList from "./components/HouseList"
+import HouseDetails from "./components/HouseDetails"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
@@ -6,7 +8,8 @@ function App() {
   return (
     <div className="App">
       <h1>Game of Throne</h1>
-      <h2>houses</h2>
+      <HouseList/>
+      <HouseDetails/>
     </div>
   );
 }
