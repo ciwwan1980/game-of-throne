@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function HouseList() {
   const [houseList, setHouseList] = useState([]);
@@ -7,17 +8,26 @@ function HouseList() {
     fetch("https://anapioficeandfire.com/api/houses")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data, "data");
-        setHouseList(data);
+        let array = [];
+
+        data.forEach((item) => {
+          let id = item.url.split("/").pop();
+          array.push({ id, ...item });
+          console.log(array, "array");
+        });
+        setHouseList(array);
       });
   }, []);
 
   return (
     <div>
       <ul>
-        {houseList.map((item, index) => (
+        {houseList.map((house, index) => (
           <li key={index}>
-            <h3>{item.name}</h3>
+            <h3>{house.name}</h3>
+            <Link to={`/house/${house.name}`}>
+              <button key={house.name}>more details</button>
+            </Link>
           </li>
         ))}
       </ul>
