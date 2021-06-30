@@ -1,17 +1,24 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 
 function HouseDetails() {
   const location = useLocation();
   const { region, name, coatOfArms } = location.state.house;
   console.log(location.state.house, "location.state.house");
 
+  let history = useHistory();
+
+  const handleBack = () => {
+    history.push("/");
+  };
   return (
     <div className="detailsContainer">
       <h2>More About {name} </h2>
 
       <div className="detailsCard">
         <div>
-          <img src={""} alt="" />
+          <button className="icon" onClick={() => handleBack()}>
+            go back
+          </button>
         </div>
 
         <h3>
@@ -23,7 +30,6 @@ function HouseDetails() {
         <p>
           Coat of Arms: <span>{coatOfArms}</span>
         </p>
-        
       </div>
     </div>
   );
