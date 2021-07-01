@@ -1,4 +1,9 @@
 
+*{
+    margin: 0; 
+    padding: 0;
+  }
+
 .detailsContainer {
     background-color: rgb(30, 32, 39);
     min-height: 100vh;
@@ -16,6 +21,7 @@
     text-align: center;
   }
   .detailsCard {
+    position: relative;
     color: rgb(143, 107, 10);
     background-color: rgb(36, 38, 46);
     padding: 2.5rem 2rem;
@@ -25,6 +31,15 @@
   .detailsCard h3 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
+  }
+  .detailsCard p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+  .icon {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    cursor: pointer;
   }
   .icon img {
     width: 30px;
