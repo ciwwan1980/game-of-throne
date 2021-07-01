@@ -3,12 +3,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HouseList from "./components/HouseList/HouseList";
 import HouseDetails from "./components/HouseDetails/HouseDetails";
 
-
 function App() {
   return (
     <Router>
       <div className="App">
-      
         <Switch>
           <Route exact path="/">
             <HouseList />

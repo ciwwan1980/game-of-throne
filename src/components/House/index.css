@@ -1,44 +1,42 @@
 .house {
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 10px 10px 15px #1a1b21, -10px -10px 15px #23252d;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 10px 10px 15px #1a1b21, -10px -10px 15px #23252d;
+}
+
+.house:hover {
+  box-shadow: inset 15px 10px 15px #21201a41,
+    inset -5px -5px 15px rgba(255, 0, 0, 0.064);
+}
+.house .dragonContainer {
+  display: none;
+}
+
+.house:hover a {
+  color: rgb(143, 107, 10);
+}
+.house a {
+  color: rgb(195, 150, 25);
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+}
+
+
+@media (min-width: 680px) {
+  .house {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  
-  .house:hover {
-    box-shadow: inset 15px 10px 15px #21201a41, inset -5px -5px 15px rgba(255, 0, 0, 0.064);
+  .dragonContainer img {
+    width: 35px;
   }
   .house .dragonContainer {
     display: none;
   }
-
-  .house:hover a {
-    color: rgb(143, 107, 10);
+  .house.active .dragonContainer {
+    display: block;
   }
-  .house a {
-    color: rgb(195, 150, 25);
-    text-decoration: none;
-  }
-
-  .dragonContainer img {
-    width: 40px;
-  }
-  
-  @media (min-width: 680px){
-    .house {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .dragonContainer img {
-        width: 35px;
-      }
-      .house .dragonContainer {
-        display: none;
-      }
-      .house.active .dragonContainer {
-        display: block;
-      }
-    
 }
-  

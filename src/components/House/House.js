@@ -17,8 +17,9 @@ const House = ({ house }) => {
 
   return (
     <div>
-      <div className={`house ${isActive ? "active" : ""}`} 
-      key={house.id}
+      <div
+        className={`house ${isActive ? "active" : ""}`}
+        key={house.id}
         onMouseEnter={changeHoverState}
         onMouseLeave={changeHoverState}
       >
