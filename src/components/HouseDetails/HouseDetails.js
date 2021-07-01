@@ -15,7 +15,7 @@ function HouseDetails() {
 
   return (
     <div className="detailsContainer"
-     style={{background: `url(${game})`,  backgroundRepeat: 'no-repeat',
+     style={{ margin:"0", padding:"0",background: `url(${game})`,  backgroundRepeat: 'no-repeat',
     backgroundSize: 'auto' }}
     >
       <h2>More About {name} </h2>
