@@ -13,7 +13,7 @@ const useFetch = (url) => {
           data.forEach((item) => {
             // console.log(item, "item")
             let id = item.url.split("/").pop()
-            console.log(id, "id");
+            // console.log(id, "id");
             array.push({ id, ...item });
           });
           setIsPending(false);

@@ -1,10 +1,10 @@
 import { useLocation, useHistory } from "react-router-dom";
-
+import "./index.css";
+import sword from "../../utils/icons/swords.png";
 
 function HouseDetails() {
   const location = useLocation();
   const { region, name, coatOfArms } = location.state.house;
-
 
   let history = useHistory();
 
@@ -16,10 +16,8 @@ function HouseDetails() {
       <h2>More About {name} </h2>
 
       <div className="detailsCard">
-        <div>
-          <button className="icon" onClick={() => handleBack()}>
-            go back
-          </button>
+        <div className="icon" onClick={() => handleBack()}>
+          <img src={sword} alt="" />
         </div>
 
         <h3>
