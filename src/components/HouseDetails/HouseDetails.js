@@ -1,6 +1,7 @@
 import { useLocation, useHistory } from "react-router-dom";
 import "./index.css";
 import sword from "../../utils/icons/swords.png";
+import game from "../../utils/icons/game.jpg";
 
 function HouseDetails() {
   const location = useLocation();
@@ -11,9 +12,12 @@ function HouseDetails() {
   const handleBack = () => {
     history.push("/");
   };
-  
+
   return (
-    <div className="detailsContainer">
+    <div className="detailsContainer"
+     style={{background: `url(${game})`,  backgroundRepeat: 'no-repeat',
+    backgroundSize: 'auto' }}
+    >
       <h2>More About {name} </h2>
 
       <div className="detailsCard">
