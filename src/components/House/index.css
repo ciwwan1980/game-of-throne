@@ -13,4 +13,20 @@
     color: rgb(195, 150, 25);
     text-decoration: none;
   }
+
+.house:hover a {
+    color: rgb(143, 107, 10);
+  }
+  
+  .dragonContainer img {
+    width: 40px;
+  }
+  
+  @media (min-width: 680px){
+    .house {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
   
