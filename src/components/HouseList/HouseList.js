@@ -1,23 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './index.css'
-function HouseList() {
-  const [houseList, setHouseList] = useState([]);
+import useFetch from "../useFetch";
 
-  useEffect(() => {
-    fetch("https://anapioficeandfire.com/api/houses")
-      .then((res) => res.json())
-      .then((data) => {
-        let array = [];
-
-        data.forEach((item) => {
-          let id = item.url.split("/").pop();
-          array.push({ id, ...item });
-        //   console.log(array, "array");
-        });
-        setHouseList(array);
-      });
-  }, []);
+const HouseList=()=> {
+  const {houseList } = useFetch("https://anapioficeandfire.com/api/houses/"
+  );
 
   return (
     <div className="houseContainer">

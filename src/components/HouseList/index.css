@@ -35,10 +35,29 @@
   .house:hover {
     box-shadow: inset 15px 10px 15px #21201a41, inset -5px -5px 15px rgba(255, 0, 0, 0.064);
   }
-  
 
   .house a {
     color: rgb(195, 150, 25);
     text-decoration: none;
+  }
+  
+  @media (min-width: 680px) {
+    .houseWrapper {
+      text-align: center;
+      min-width: 80%;
+    }
+  }
+
+@media (min-width: 1180px) {
+    .houseWrapper {
+      min-width: unset;
+      width: 880px;
+    }
+  }
+  @media (min-width: 1180px) {
+    .houseWrapper {
+      min-width: unset;
+      width: 880px;
+    }
   }
   
