@@ -19,7 +19,7 @@ const useFetch = (url) => {
           setIsPending(false);
           setHouseList(array);
         });
-    }, 1000);
+    }, 500);
   }, [url]);
 
   return { houseList, isPending };

@@ -1,0 +1,16 @@
+.house {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 15px #1a1b21, -10px -10px 15px #23252d;
+  }
+  
+  .house:hover {
+    box-shadow: inset 15px 10px 15px #21201a41, inset -5px -5px 15px rgba(255, 0, 0, 0.064);
+  }
+
+  .house a {
+    color: rgb(195, 150, 25);
+    text-decoration: none;
+  }
+  
