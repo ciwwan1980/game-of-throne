@@ -11,6 +11,7 @@ function HouseDetails() {
   const handleBack = () => {
     history.push("/");
   };
+  
   return (
     <div className="detailsContainer">
       <h2>More About {name} </h2>
@@ -23,9 +24,11 @@ function HouseDetails() {
         <h3>
           House Name: <span>{name}</span>
         </h3>
+
         <p>
           Region: <span>{region}</span>
         </p>
+
         <p>
           Coat of Arms: <span>{coatOfArms}</span>
         </p>
