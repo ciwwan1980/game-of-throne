@@ -1,12 +1,27 @@
 import { Link } from "react-router-dom";
 import "./index.css";
 import dragon from "../../utils/icons/dragon.png";
-
+import React, { useState } from "react";
 const House = ({ house }) => {
-  console.log(house, "house");
+  const [isActive, setIsActive] = useState(false);
+
+  const changeHoverState = () => {
+    if (isActive) {
+      setIsActive(false);
+    } else {
+      setIsActive(true);
+    }
+  };
+  console.log("active here", isActive);
+  //   console.log(house);
+
   return (
     <div>
-      <div className="house" key={house.id}>
+      <div className={`house ${isActive ? "active" : ""}`} 
+      key={house.id}
+        onMouseEnter={changeHoverState}
+        onMouseLeave={changeHoverState}
+      >
         <Link
           to={{
             pathname: `/house/${house.id}`,
