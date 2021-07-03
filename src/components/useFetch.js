@@ -10,9 +10,7 @@ const useFetch = (url) => {
       .then((data) => {
         let array = [];
         data.forEach((item) => {
-          // console.log(item, "item")
           let id = item.url.split("/").pop();
-          // console.log(id, "id");
           array.push({ id, ...item });
         });
         setIsPending(false);

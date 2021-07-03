@@ -23,6 +23,7 @@
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 10px 10px 15px #1a1b21, -10px -10px 15px #23252d;
+  text-align:center;
 }
 
 /* media querries for desktop */
@@ -39,3 +40,4 @@
     width: 880px;
   }
 }
+
