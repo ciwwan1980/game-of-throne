@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./index.css";
-import dragon from "../../utils/icons/dragon.png";
+import dragon from "../../assets/icons/dragon.png";
 import React, { useState } from "react";
 const House = ({ house }) => {
   const [isActive, setIsActive] = useState(false);
