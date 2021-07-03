@@ -1,7 +1,7 @@
 import { useLocation, useHistory } from "react-router-dom";
 import "./HouseDetails.css";
 import sword from "../../assets/icons/swords.png";
-import game from "../../assets/images/game.jpg";
+// import game from "../../assets/images/game.jpg";
 
 function HouseDetails() {
   const location = useLocation();
