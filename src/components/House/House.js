@@ -12,9 +12,6 @@ const House = ({ house }) => {
       setIsActive(true);
     }
   };
-  console.log("active here", isActive);
-  //   console.log(house);
-
   return (
     <div>
       <div
