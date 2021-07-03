@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.9704219a.chunk.css",
+    "main.js": "./static/js/main.9b399de8.chunk.js",
+    "main.js.map": "./static/js/main.9b399de8.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.85f7e0d3.js",
+    "runtime-main.js.map": "./static/js/runtime-main.85f7e0d3.js.map",
+    "static/js/2.b9bce82d.chunk.js": "./static/js/2.b9bce82d.chunk.js",
+    "static/js/2.b9bce82d.chunk.js.map": "./static/js/2.b9bce82d.chunk.js.map",
+    "static/js/3.615a522f.chunk.js": "./static/js/3.615a522f.chunk.js",
+    "static/js/3.615a522f.chunk.js.map": "./static/js/3.615a522f.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.9704219a.chunk.css.map": "./static/css/main.9704219a.chunk.css.map",
+    "static/js/2.b9bce82d.chunk.js.LICENSE.txt": "./static/js/2.b9bce82d.chunk.js.LICENSE.txt",
+    "static/media/HouseDetails.css": "./static/media/game.3dc59f12.jpg",
+    "static/media/swords.fe0549e2.png": "./static/media/swords.fe0549e2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85f7e0d3.js",
+    "static/js/2.b9bce82d.chunk.js",
+    "static/css/main.9704219a.chunk.css",
+    "static/js/main.9b399de8.chunk.js"
+  ]
+}
