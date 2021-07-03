@@ -11,7 +11,6 @@ function App() {
           <Route exact path="/">
             <HouseList />
           </Route>
-
           <Route path="/house/:id">
             <HouseDetails />
           </Route>

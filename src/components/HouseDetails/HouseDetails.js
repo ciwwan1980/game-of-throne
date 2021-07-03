@@ -1,7 +1,6 @@
 import { useLocation, useHistory } from "react-router-dom";
 import "./HouseDetails.css";
 import sword from "../../assets/icons/swords.png";
-// import game from "../../assets/images/game.jpg";
 
 function HouseDetails() {
   const location = useLocation();
@@ -25,11 +24,9 @@ function HouseDetails() {
         <h3>
           House Name: <span>{name}</span>
         </h3>
-
         <p>
           Region: <span>{region}</span>
         </p>
-
         <p>
           Coat of Arms: <span>{coatOfArms}</span>
         </p>

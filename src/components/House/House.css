@@ -5,16 +5,12 @@
   border-radius: 0.5rem;
   box-shadow: 10px 10px 15px #1a1b21, -10px -10px 15px #23252d;
 }
-
 .house:hover {
   box-shadow: inset 15px 10px 15px #21201a41,
-    inset -5px -5px 15px rgba(255, 0, 0, 0.064);
-}
-.house .dragonContainer {
-  /* display: none; */
+    inset -20px -10px 30px #ff000010;
 }
 .dragonContainer img {
-  width: 35px;
+  width: 40px;
 }
 .house:hover a {
   color: rgb(143, 107, 10);
@@ -25,8 +21,7 @@
   width: 100%;
   text-align: left;
 }
-
-
+/* media querries for desktop */
 @media (min-width: 680px) {
   .house {
     display: flex;
