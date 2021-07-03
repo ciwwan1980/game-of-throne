@@ -1,5 +1,5 @@
 import { useLocation, useHistory } from "react-router-dom";
-import "./index.css";
+import "./HouseDetails.css";
 import sword from "../../assets/icons/swords.png";
 import game from "../../assets/images/game.jpg";
 

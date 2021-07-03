@@ -1,5 +1,5 @@
-import "./index.css";
-import useFetch from "../useFetch";
+import "./HouseList.css";
+import useFetch from "../../utils/useFetch";
 import House from "../House/House";
 
 const HouseList = () => {

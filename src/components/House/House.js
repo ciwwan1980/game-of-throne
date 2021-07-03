@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./index.css";
+import "./House.css";
 import dragon from "../../assets/icons/dragon.png";
 import React, { useState } from "react";
 const House = ({ house }) => {
