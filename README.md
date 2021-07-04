@@ -21,7 +21,7 @@ In the Detailed Page, I will add Previous and Next buttons.
 ### Deployment
 - I deploy the App on vercel
 - The link to the project is here:
- https://game-of-thrones-liard.vercel.app/
+https://game-of-thrones-liard.vercel.app/
 
 
 ## Installation
