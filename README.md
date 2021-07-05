@@ -4,7 +4,7 @@ Game of Thrones
 
 ## Requirements
 
-Create create a single page application. The SPA should display all houses of Game of Thrones.
+Create a single page application. The SPA should display all houses of Game of Thrones.
 If you click on one of the houses, you should be taken to a details page with more information.
 
 ## Reflection
@@ -12,6 +12,7 @@ If you click on one of the houses, you should be taken to a details page with mo
 - For fetching API, I created a custom hook called "useFetch".
 - To import pictures, I used https://www.flaticon.com/de/ (dragon icon).
 - In the readme.md file, I utilized the MarkDown template to offer an overview of the project and how to run it on your own computer.
+- The App is fully responsive
 
 ## Future Improvment
 - For future App improvement, I will add Navbar to fetch Characters and book API.
@@ -34,11 +35,11 @@ https://game-of-thrones-liard.vercel.app/
 ### For mobile 
 - Houses
 
-[![Screen-Shot-2021-07-03-at-22-15-17.png](https://i.postimg.cc/d3459nGL/Screen-Shot-2021-07-03-at-22-15-17.png)](https://postimg.cc/CnnChGPg)
+[![Screen-Shot-2021-07-05-at-13-03-29.png](https://i.postimg.cc/vT34pycz/Screen-Shot-2021-07-05-at-13-03-29.png)](https://postimg.cc/D44fXtQJ)
 
 - Houses Details
 
-[![Screen-Shot-2021-07-03-at-22-15-51.png](https://i.postimg.cc/pdzkSPDN/Screen-Shot-2021-07-03-at-22-15-51.png)](https://postimg.cc/f3Wxtn25)
+[![Screen-Shot-2021-07-05-at-13-03-44.png](https://i.postimg.cc/Pf2Nft5b/Screen-Shot-2021-07-05-at-13-03-44.png)](https://postimg.cc/JtHRPCJt)
 
 ### For Desktop 
 

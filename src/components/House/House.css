@@ -1,5 +1,8 @@
 
 .house {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -11,6 +14,7 @@
 }
 .dragonContainer img {
   width: 40px;
+  margin-left: 35px;
 }
 .house:hover a {
   color: rgb(143, 107, 10);
@@ -23,11 +27,6 @@
 }
 /* media querries for desktop */
 @media (min-width: 680px) {
-  .house {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   .dragonContainer img {
     width: 45px;
   }
