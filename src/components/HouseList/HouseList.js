@@ -4,7 +4,7 @@ import House from "../House/House";
 
 const HouseList = () => {
   const { houseList, isPending, error } = useFetch(
-    "https://anapioficeandfire.com/api/houseses/"
+    "https://anapioficeandfire.com/api/houses/"
   );
 
   return (

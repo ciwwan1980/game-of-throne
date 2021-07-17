@@ -46,6 +46,11 @@
 .icon img {
   width: 30px;
 }
+.detailsContainer .errorMessage{
+  background-color:red;
+  color: white;
+  font-size: 1rem;
+}
 /* media querries for desktop */
 @media (min-width: 680px) {
   .detailsCard {
@@ -65,5 +70,10 @@
   }
   .icon img {
     width: 40px;
+  }
+  .detailsContainer .errorMessage{
+    background-color:red;
+    color: white;
+    font-size: 2rem;
   }
 }
