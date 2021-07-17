@@ -9,6 +9,7 @@
   align-items: center;
   padding: 3rem 1rem;
   background-color: rgb(30, 32, 39);
+  box-sizing: border-box;
 }
 
 .houseContainer h1 {
