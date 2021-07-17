@@ -3,13 +3,14 @@ import useFetch from "../../utils/useFetch";
 import House from "../House/House";
 
 const HouseList = () => {
-  const { houseList, isPending } = useFetch(
-    "https://anapioficeandfire.com/api/houses/"
+  const { houseList, isPending, error } = useFetch(
+    "https://anapioficeandfire.com/api/houseses/"
   );
 
   return (
     <div className="houseContainer">
-      {isPending && <h1 className="loading">Loading ... </h1>}
+      {error && <div className="errorMessage">{error}</div>}
+      {isPending && <div className="loading">Loading ... </div>}
       <h1>Houses</h1>
       <div className="houseWrapper">
         {houseList.map((house, index) => (

@@ -26,7 +26,13 @@
   box-shadow: 10px 10px 15px #1a1b21, -10px -10px 15px #23252d;
   text-align:center;
 }
-
+.houseContainer .errorMessage{
+  background-color:red;
+  color:yellow;
+  padding: 2rem;
+  margin: 1rem;
+  font-size: 1rem;
+}
 /* media querries for desktop */
 @media (min-width: 680px) {
   .houseWrapper {
@@ -39,6 +45,11 @@
   .houseWrapper {
     min-width: unset;
     width: 880px;
+  }
+  .houseContainer .errorMessage{
+    background-color:red;
+    color: white;
+    font-size: 2rem;
   }
 }
 
